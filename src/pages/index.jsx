@@ -3,7 +3,7 @@ import axios from "axios";
 import Link from "next/link";
 import Image from "next/image";
 import NavBar from "@/components/NavBar";
-import Sidebar from "@/components/Sidebar";
+import SideBar from "@/components/SideBar";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart as farHeart } from '@fortawesome/free-regular-svg-icons';
 import { faHeart as fasHeart } from '@fortawesome/free-solid-svg-icons';
@@ -91,7 +91,7 @@ const Home = () => {
                         ))}
                     </div>
                     <div className="lg:col-span-1 order-first lg:order-last">
-                        <Sidebar 
+                        <SideBar 
                             categories={categories} 
                             handleCategoryChange={handleCategoryChange} 
                             selectedCategory={selectedCategory}
