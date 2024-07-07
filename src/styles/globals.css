@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.post-content img {
+    @apply max-w-[30%] max-h-[30%] mt-3 mb-3;
+}
+
+.post-content p {
+    @apply text-base leading-relaxed mb-3;
+}
+
+.post-content h1 {
+    @apply text-3xl font-bold text-gray-800;
+}
+
+.post-content h2 {
+    @apply text-2xl font-bold text-gray-700;
+}
+
+.post-content h3 {
+    @apply text-xl font-bold text-gray-600;
+}
