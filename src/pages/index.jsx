@@ -65,7 +65,7 @@ const Home = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                     <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-8">
                         {filteredPosts.map((post) => (
-                            <div className="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl">
+                            <div key={post.id} className="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl">
                                 <Link key={post.id} href={`/post/${post.id}`}>
                                     <div className="h-48 w-full relative">
                                         <Image
